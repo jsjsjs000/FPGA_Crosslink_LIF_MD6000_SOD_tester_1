@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="LIF_MD6000_SOD_tester_1" device="LIF-MD6000-6KMG80I" default_implementation="impl3_oled_svga060_test_image">
+    <Options/>
+    <Implementation title="impl1_gpio_test" dir="impl1_gpio_test" description="impl1_gpio_test" synthesis="lse" default_strategy="Area">
+        <Options def_top="gpio_test"/>
+        <Source name="impl1_gpio_test/gpio_test.v" type="Verilog" type_short="Verilog">
+            <Options top_module="gpio_test"/>
+        </Source>
+        <Source name="impl1_gpio_test/impl1_gpio_test.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="impl1_gpio_test/LIF_MD6000_SOD_tester_1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="impl2_pll" dir="impl2_pll" description="impl2_pll" synthesis="lse" default_strategy="Area">
+        <Options def_top="top"/>
+        <Source name="impl2_pll/pll/pll.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl2_pll/pll.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl2_pll/impl2_pll.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="impl2_pll/LIF_MD6000_SOD_tester_1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="impl3_oled_svga060_test_image" dir="impl3_oled_svga060_test_image" description="impl3_oled_svga060_test_image" synthesis="lse" default_strategy="Area">
+        <Options def_top="top"/>
+        <Source name="impl3_oled_svga060_test_image/test_screens_generator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl3_oled_svga060_test_image/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl3_oled_svga060_test_image/image_generator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl3_oled_svga060_test_image/pll/pll.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl3_oled_svga060_test_image/impl3_oled_svga060_test_image.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="impl3_oled_svga060_test_image/LIF_MD6000_SOD_tester_1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="LIF_MD6000_SOD_tester_11.sty"/>
+</BaliProject>

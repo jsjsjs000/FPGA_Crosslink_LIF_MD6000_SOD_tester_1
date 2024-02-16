@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Thu Feb 15 13:23:37 2024
+[*]
+[dumpfile] "C:\Users\p2119\Desktop\LIF_MD6000_SOD_tester_1\simulation\image_generator.vcd"
+[dumpfile_mtime] "Thu Feb 15 13:07:39 2024"
+[dumpfile_size] 95272976
+[savefile] "C:\Users\p2119\Desktop\LIF_MD6000_SOD_tester_1\simulation\image_generator.gtkw"
+[timestart] 314800000
+[size] 1915 833
+[pos] 1863 11
+*-26.037497 582936000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ImageGenerator_tb.
+[treeopen] ImageGenerator_tb.DUT.
+[sst_width] 197
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 235
+@28
+ImageGenerator_tb.DUT.test_screens_generator_impl.Clock
+ImageGenerator_tb.DUT.Reset
+ImageGenerator_tb.DUT.VS
+ImageGenerator_tb.DUT.HS
+@22
+ImageGenerator_tb.DUT.Vcounter[11:0]
+ImageGenerator_tb.DUT.Hcounter[11:0]
+ImageGenerator_tb.DUT.test_screens_generator_impl.x[11:0]
+ImageGenerator_tb.DUT.test_screens_generator_impl.y[11:0]
+ImageGenerator_tb.DUT.test_screens_generator_impl.R[7:0]
+ImageGenerator_tb.DUT.test_screens_generator_impl.G[7:0]
+@23
+ImageGenerator_tb.DUT.test_screens_generator_impl.B[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
