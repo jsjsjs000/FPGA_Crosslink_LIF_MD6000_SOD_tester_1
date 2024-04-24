@@ -17,6 +17,10 @@ module image_generator(
 	parameter V_SYNC = 4;
 	parameter V_FRONT_PORCH = 1;
  	parameter V_BACK_PORCH = 23;
+	parameter SYNC_H = 1'b1;	// positive sync
+	parameter SYNC_L = 1'b0;
+	//parameter SYNC_H = 1'b0;	// negative sync
+	//parameter SYNC_L = 1'b1;
 
  	reg [11:0] Hcounter = 12'd0;
  	reg [11:0] Vcounter = 12'd0;
@@ -38,13 +42,13 @@ module image_generator(
 			Vcounter <= V_SYNC + V_FRONT_PORCH + HEIGHT - 1;
 			Pcounter <= 12'hfff;
 			Vactive <= 1'd0;
-			HS <= 1'b1;
-			VS <= 1'b1;
+			HS <= SYNC_L;
+			VS <= SYNC_L;
 		end
 		else begin
 			Hcounter <= Hcounter + 1'b1;
 			if (Hcounter == H_SYNC - 1) begin
-				HS <= 1'b1;						// end H_SYNC
+				HS <= SYNC_L;					// end H_SYNC
 			end
 			else if (Vactive && (Hcounter == H_SYNC + H_FRONT_PORCH - 1 - 1)) begin
 				Pcounter <= 12'd0;				// start of line
@@ -53,7 +57,7 @@ module image_generator(
 												// end of line
 				Vcounter <= Vcounter + 1'b1;
 				if (Vcounter == V_SYNC - 1) begin
-					VS <= 1'b1;					// end V_SYNC
+					VS <= SYNC_L;				// end V_SYNC
 				end
 				else if (Vcounter == V_SYNC + V_FRONT_PORCH - 1) begin
 					Vactive <= 1'b1;			// start V_ACTIVE
@@ -63,7 +67,7 @@ module image_generator(
 				end
 				else if (Vcounter == V_SYNC + V_FRONT_PORCH + HEIGHT + V_BACK_PORCH - 1) begin
 					Vcounter <= 0;				// end of frame
-					VS <= 1'b0;
+					VS <= SYNC_H;
 
 					ImageCounter <= ImageCounter - 1'b1;
 					if (ImageCounter - 1 == 0) begin
@@ -80,7 +84,7 @@ module image_generator(
 				end
 
 				Hcounter <= 12'd0;
-				HS <= 1'b0;						// start H_SYNC
+				HS <= SYNC_H;					// start H_SYNC
 			end
 
 			if (DE)								// active display

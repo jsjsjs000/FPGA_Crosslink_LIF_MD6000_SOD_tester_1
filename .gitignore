@@ -26,6 +26,7 @@
 *.t2b
 *.twr
 *.vdbs
+*.vcd
 *.xml
 *_prim.v
 .build_status

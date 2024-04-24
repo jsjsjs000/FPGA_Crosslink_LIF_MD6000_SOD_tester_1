@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="dsi_to_cmos_top" device="LIF-MD6000-6KMG80I" synthesis="lse" default_implementation="dsi_to_cmos_top">
+    <Implementation title="dsi_to_cmos_top" dir="dsi_to_cmos_top" description="dsi_to_cmos_top" default_strategy="dsi_to_cmos_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="dsi_to_cmos"/>
+        </Options>
+        <Source name="../../../../models/lifmd/pll_wrapper.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos_byte2pixel_bb.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos_capture_ctrl_bb.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos_rx_global_ctrl_bb.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos_dphy_rx_wrap_bb.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos_dphy_2_cmos_ip.v" type="Verilog"/>
+        <Source name="../../../../../dsi_to_cmos.v" type="Verilog"/>
+        <Source name="dsi_to_cmos_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="dsi_to_cmos_top" file="dsi_to_cmos_top.sty"/>
+</BaliProject>

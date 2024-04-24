@@ -49,5 +49,23 @@
             <Options/>
         </Source>
     </Implementation>
+    <Implementation title="impl4_dsi_to_oled_svga060" dir="impl4_dsi_to_oled_svga060" description="impl4_dsi_to_oled_svga060" synthesis="lse" default_strategy="Area">
+        <Options def_top="dsi"/>
+        <Source name="impl4_dsi_to_oled_svga060/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl4_dsi_to_oled_svga060/pll/pll.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl4_dsi_to_oled_svga060/dsi/dsi.sbx" type="sbx" type_short="SBX">
+            <Options top_module="dsi"/>
+        </Source>
+        <Source name="impl4_dsi_to_oled_svga060/impl4_dsi_to_oled_svga060.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="LIF_MD6000_SOD_tester_1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
     <Strategy name="Strategy1" file="LIF_MD6000_SOD_tester_11.sty"/>
 </BaliProject>

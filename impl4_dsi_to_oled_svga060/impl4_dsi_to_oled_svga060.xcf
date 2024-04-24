@@ -19,15 +19,16 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl3_oled_svga060_test_image/LIF_MD6000_SOD_tester_1_impl3_oled_svga060_test_image.bit</File>
-			<FileTime>02/16/24 10:01:12</FileTime>
-			<JedecChecksum>0x536F</JedecChecksum>
+			<File>C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit</File>
+			<FileTime>02/16/24 15:12:28</FileTime>
+			<JedecChecksum>0x85E5</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>39</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFF</IOVectorData>
+				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>SSPI SRAM Programming</AccessMode>

@@ -1,0 +1,1317 @@
+<!DOCTYPE dsi>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>dsi</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./dsi.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./dsi.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_clk_n_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_clk_n_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.clk_n_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_clk_p_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_clk_p_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.clk_p_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_clk_pixel_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_clk_pixel_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.clk_pixel_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d0_n_io</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d0_n_io</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d0_n_io</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d0_p_io</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d0_p_io</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d0_p_io</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d1_n_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d1_n_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d1_n_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d1_p_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d1_p_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d1_p_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d2_n_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d2_n_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d2_n_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d2_p_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d2_p_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d2_p_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d3_n_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d3_n_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d3_n_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_d3_p_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_d3_p_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.d3_p_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_de_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_de_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.de_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_hsync_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_hsync_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.hsync_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_reset_n_i</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_reset_n_i</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.reset_n_i</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_vsync_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_vsync_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.vsync_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_pd_blue_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_pd_blue_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.pd_blue_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_pd_green_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_pd_green_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.pd_green_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>dsi_to_cmos_pd_red_o</spirit:name>
+                    <spirit:displayName>dsi_to_cmos_pd_red_o</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">dsi_to_cmos.pd_red_o</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LIF-MD6000-6KMG80I</lattice:device>
+            <lattice:synthesis>lse</lattice:synthesis>
+            <lattice:date>2024-02-16.10:58:45</lattice:date>
+            <lattice:modified>2024-02-20.12:53:40</lattice:modified>
+            <lattice:diamond>3.13.0.56.2</lattice:diamond>
+            <lattice:language>Verilog</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>dsi</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>dsi_to_cmos</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>D-PHY to CMOS</spirit:name>
+                    <spirit:version>1.3</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_params.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll_wrapper.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_params.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll_wrapper.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_params.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll_wrapper.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_params.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_byte2pixel.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_capture_ctrl.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dsi_to_cmos_rx_global_ctrl.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll_wrapper.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>clk_n_i</spirit:name>
+                                <spirit:displayName>clk_n_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_p_i</spirit:name>
+                                <spirit:displayName>clk_p_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_pixel_o</spirit:name>
+                                <spirit:displayName>clk_pixel_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_n_io</spirit:name>
+                                <spirit:displayName>d0_n_io</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_p_io</spirit:name>
+                                <spirit:displayName>d0_p_io</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d1_n_i</spirit:name>
+                                <spirit:displayName>d1_n_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d1_p_i</spirit:name>
+                                <spirit:displayName>d1_p_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d2_n_i</spirit:name>
+                                <spirit:displayName>d2_n_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d2_p_i</spirit:name>
+                                <spirit:displayName>d2_p_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d3_n_i</spirit:name>
+                                <spirit:displayName>d3_n_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d3_p_i</spirit:name>
+                                <spirit:displayName>d3_p_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>de_o</spirit:name>
+                                <spirit:displayName>de_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>hsync_o</spirit:name>
+                                <spirit:displayName>hsync_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>reset_n_i</spirit:name>
+                                <spirit:displayName>reset_n_i</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>vsync_o</spirit:name>
+                                <spirit:displayName>vsync_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>pd_blue_o</spirit:name>
+                                <spirit:displayName>pd_blue_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>7</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>pd_green_o</spirit:name>
+                                <spirit:displayName>pd_green_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>7</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>pd_red_o</spirit:name>
+                                <spirit:displayName>pd_red_o</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>7</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:date>22-04-16.00:00:00</lattice:date>
+                        <lattice:modified>2024-02-20.12:53:40</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">IPCFG</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">sn5w00</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CKFBGA80</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LIF-MD6000-6KMG80I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LIF-MD6000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">6</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">S</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">D-PHY to CMOS</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.3</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IPCFG</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">02/20/2024</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">dsi_to_cmos</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12:51:04</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CORE_SYNP</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>data_type</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">RGB888</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>data_type_str</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">RGB888</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>data_type_val</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">6'h3E</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dphyclkmode</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">HS_ONLY</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fifodepth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">16</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fifotype0</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fifotype1</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fifotype2</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fifotype3</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>lanealign</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ON</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>maxrxrate</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1500</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>miscon</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numpixtotal</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numrxch</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numrxln</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">4</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numtxch</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numtxln</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">24</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pdbuswidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">24</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pixwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">24</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>rgb666_type</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>rxdphyip</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">MIXEL</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>rxfifo</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">OFF</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>rxgear</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>rxtype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">DSI</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtbyteclk</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">30.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtdphyclk</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">120.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtpixclk</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">40.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtpixclkint</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">40.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtrefclk</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">10.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgtrxrate</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">240</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tgttxrate</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">40.0000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>txgear</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>txtype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CMOS</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>txwait</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LESS_15MS</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>wordalign</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ON</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_clk_n_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_clk_n_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_n_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_clk_n_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_clk_p_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_clk_p_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_p_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_clk_p_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_clk_pixel_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_clk_pixel_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="clk_pixel_o" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_clk_pixel_o"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d0_n_io</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d0_n_io</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_n_io" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d0_n_io"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d0_p_io</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d0_p_io</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_p_io" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d0_p_io"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d1_n_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d1_n_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d1_n_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d1_n_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d1_p_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d1_p_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d1_p_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d1_p_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d2_n_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d2_n_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d2_n_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d2_n_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d2_p_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d2_p_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d2_p_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d2_p_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d3_n_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d3_n_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d3_n_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d3_n_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_d3_p_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_d3_p_i</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d3_p_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_d3_p_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_de_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_de_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="de_o" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_de_o"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_hsync_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_hsync_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="hsync_o" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_hsync_o"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_reset_n_i</spirit:name>
+                <spirit:displayName>dsi_to_cmos_reset_n_i</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="reset_n_i" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_reset_n_i"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_vsync_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_vsync_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="vsync_o" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_vsync_o"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="pd_blue_o" spirit:componentRef="dsi_to_cmos" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="dsi_to_cmos_pd_blue_o" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[0]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[0]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[0]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[1]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[1]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[1]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[2]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[2]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[2]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[3]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[3]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[3]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[4]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[4]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[4]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[5]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[5]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[5]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[6]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[6]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[6]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_blue_o[7]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_blue_o[7]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_blue_o[7]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_blue_o[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="pd_green_o" spirit:componentRef="dsi_to_cmos" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="dsi_to_cmos_pd_green_o" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[0]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[0]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[0]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[1]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[1]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[1]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[2]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[2]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[2]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[3]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[3]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[3]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[4]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[4]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[4]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[5]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[5]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[5]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[6]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[6]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[6]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_green_o[7]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_green_o[7]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_green_o[7]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_green_o[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="pd_red_o" spirit:componentRef="dsi_to_cmos" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="dsi_to_cmos_pd_red_o" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[0]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[0]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[0]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[1]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[1]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[1]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[2]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[2]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[2]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[3]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[3]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[3]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[4]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[4]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[4]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[5]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[5]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[5]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[6]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[6]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[6]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>dsi_to_cmos_pd_red_o[7]</spirit:name>
+                <spirit:displayName>dsi_to_cmos_pd_red_o[7]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="pd_red_o[7]" spirit:componentRef="dsi_to_cmos"/>
+                <spirit:externalPortReference spirit:portRef="dsi_to_cmos_pd_red_o[7]"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

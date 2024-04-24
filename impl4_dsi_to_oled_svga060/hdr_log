@@ -1,0 +1,87 @@
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Apr 24 14:20:06 2024
+
+
+Command Line:  synthesis -f LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060_lattice.synproj -gui -msgset C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/promote.xml 
+
+Synthesis options:
+The -a option is LIFMD.
+The -s option is 6.
+The -t option is CKFBGA80.
+The -d option is LIF-MD6000.
+Using package CKFBGA80.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : LIFMD
+
+### Device  : LIF-MD6000
+
+### Package : CKFBGA80
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = dsi.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1 (searchpath added)
+-p C:/lscc/diamond/3.13/ispfpga/sn5w00/data (searchpath added)
+-p C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060 (searchpath added)
+-p C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1 (searchpath added)
+-p C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos (searchpath added)
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/top.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/pll/pll1/pll1.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/pll/pll.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_params.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_byte2pixel_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_capture_ctrl_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_rx_global_ctrl_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll_wrapper.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_params.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_dphy_2_cmos_ip.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_byte2pixel_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_capture_ctrl_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_dphy_rx_wrap_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dsi_to_cmos_rx_global_ctrl_bb.v
+Verilog design file = C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/dsi/dsi_to_cmos/dphy2cmos_eval/models/lifmd/pll
