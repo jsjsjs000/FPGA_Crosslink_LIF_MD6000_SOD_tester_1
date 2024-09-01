@@ -1,0 +1,27 @@
+SCUBA, Version Diamond (64-bit) 3.13.0.56.2
+Sat Aug 31 18:43:59 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : D:\LatticeDiamond\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n pll1 -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type pll -fin 24 -clkibuf LVCMOS18 -fclkop 108 -fclkop_tol 10.0 -fclkos2 108 -fclkos2_tol 0.0 -phases2 90 -phase_cntl STATIC -rst -fb_mode 1 -fdc C:/Users/jarsul/Desktop/LIF_MD6000_SOD_tester_1/impl3_oled_sxga060_test_image/pll/pll1/pll1.fdc 
+    Circuit name     : pll1
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+	Inputs       : CLKI, RST
+	Outputs      : CLKOP, CLKOS2
+    I/O buffer       : not inserted
+    EDIF output      : pll1.edn
+    Verilog output   : pll1.v
+    Verilog template : pll1_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : pll1.srp
+    Element Usage    :
+        EHXPLLM : 1
+             IB : 1
+    Estimated Resource Usage:
