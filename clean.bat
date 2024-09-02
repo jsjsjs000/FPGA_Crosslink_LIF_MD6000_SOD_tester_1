@@ -8,7 +8,7 @@ del *.ccl
 del *.sty
 del *.xml
 
-for %%p in (impl1_gpio_test impl2_pll impl3_oled_svga060_test_image impl4_dsi_to_oled_svga060) do (
+for %%p in (impl1_gpio_test impl2_pll impl3_oled_svga060_test_image impl3_oled_sxga060_test_image impl4_dsi_to_oled_svga060) do (
 	echo %%p%
 
 	rmdir /s /q %%p%\.vdbs
