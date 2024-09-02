@@ -69,7 +69,7 @@
             <lattice:device>LIF-MD6000-6KMG80I</lattice:device>
             <lattice:synthesis>lse</lattice:synthesis>
             <lattice:date>2024-02-09.11:48:22</lattice:date>
-            <lattice:modified>2024-08-31.18:43:59</lattice:modified>
+            <lattice:modified>2024-09-02.11:35:23</lattice:modified>
             <lattice:diamond>3.13.0.56.2</lattice:diamond>
             <lattice:language>Verilog</lattice:language>
             <lattice:attributes>
@@ -181,7 +181,7 @@
                     </spirit:model>
                     <spirit:vendorExtensions>
                         <lattice:synthesis>lse</lattice:synthesis>
-                        <lattice:modified>2024-08-31.18:43:59</lattice:modified>
+                        <lattice:modified>2024-09-02.11:35:23</lattice:modified>
                         <lattice:attributes>
                             <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
                             <lattice:attribute lattice:name="BBox">false</lattice:attribute>
@@ -249,7 +249,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Date</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">08/31/2024</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">09/02/2024</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>ModuleName</lattice:lpckey>
@@ -265,7 +265,7 @@
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>Time</lattice:lpckey>
-                                <lattice:lpcvalue lattice:resolve="constant">18:06:17</lattice:lpcvalue>
+                                <lattice:lpcvalue lattice:resolve="constant">11:33:43</lattice:lpcvalue>
                             </lattice:lpcentry>
                             <lattice:lpcentry>
                                 <lattice:lpckey>VendorName</lattice:lpckey>

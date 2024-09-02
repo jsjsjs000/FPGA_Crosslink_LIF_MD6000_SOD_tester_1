@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2024 8 31 18 43 59)
+      (timestamp 2024 9 2 11 33 46)
       (program "SCUBA" (version "Diamond (64-bit) 3.13.0.56.2"))))
-      (comment "D:\LatticeDiamond\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n pll1 -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type pll -fin 24 -clkibuf LVCMOS18 -fclkop 108 -fclkop_tol 10.0 -fclkos2 108 -fclkos2_tol 0.0 -phases2 90 -phase_cntl STATIC -rst -fb_mode 1 -fdc C:/Users/jarsul/Desktop/LIF_MD6000_SOD_tester_1/impl3_oled_sxga060_test_image/pll/pll1/pll1.fdc ")
+      (comment "C:\lscc\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n pll1 -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type pll -fin 24 -clkibuf LVCMOS18 -fclkop 108 -fclkop_tol 10.0 -fclkos2 108 -fclkos2_tol 0.0 -phases2 90 -phase_cntl STATIC -rst -fb_mode 1 -fdc C:/jarsulk-pco/projects/LT-22/Programs/Lattice-Crosslink/LIF_MD6000_SOD_tester_1/impl3_oled_sxga060_test_image/pll/pll1/pll1.fdc ")
   (library ORCLIB
     (edifLevel 0)
     (technology

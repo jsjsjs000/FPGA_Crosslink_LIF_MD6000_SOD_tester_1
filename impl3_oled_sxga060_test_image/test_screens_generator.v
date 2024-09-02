@@ -26,10 +26,10 @@ module test_screens_generator(
 	output reg [7:0] B
 );
 
-	parameter IMAGE_STATE_RECTANGLE  = 4'b0001;		// ImageState - state machine
-	parameter IMAGE_STATE_V_BARS     = 4'b0010;
-	parameter IMAGE_STATE_H_BARS     = 4'b0100;
-	parameter IMAGE_STATE_GRAY_SCALE = 4'b1000;
+	//parameter IMAGE_STATE_RECTANGLE  = 4'b0001;		// ImageState - state machine
+	//parameter IMAGE_STATE_V_BARS     = 4'b0010;
+	//parameter IMAGE_STATE_H_BARS     = 4'b0100;
+	//parameter IMAGE_STATE_GRAY_SCALE = 4'b1000;
 
 	reg [12:0] ColorTmp;		// for 600 * 10, next / 23
 
@@ -41,7 +41,7 @@ module test_screens_generator(
 		end
 		else
 		begin
-			if (ImageState == IMAGE_STATE_RECTANGLE) begin
+			if (ImageState == `IMAGE_STATE_RECTANGLE) begin
 				if ((y == 2) || (y == `HEIGHT - 1) || (x == 0) || (x == `WIDTH - 1)) begin  // 2 - margin left
 					R <= 8'hff;
 					G <= 8'hff;
@@ -54,7 +54,7 @@ module test_screens_generator(
 				end
 			end
 			else 
-				if (ImageState == IMAGE_STATE_V_BARS) begin
+				if (ImageState == `IMAGE_STATE_V_BARS) begin
 				if (y < `HEIGHT_1_8) begin
 					R <= 8'h00;
 					G <= 8'h00;
@@ -96,7 +96,7 @@ module test_screens_generator(
 					B <= 8'hff;
 				end
 			end
-			else if (ImageState == IMAGE_STATE_H_BARS) begin
+			else if (ImageState == `IMAGE_STATE_H_BARS) begin
 				if (x < `WIDTH_1_8) begin
 					R <= 8'h00;
 					G <= 8'h00;
@@ -138,7 +138,7 @@ module test_screens_generator(
 					B <= 8'hff;
 				end
 			end
-			else if (ImageState == IMAGE_STATE_GRAY_SCALE) begin
+			else if (ImageState == `IMAGE_STATE_GRAY_SCALE) begin
 				R <= ColorTmp[7:0];
 				G <= ColorTmp[7:0];
 				B <= ColorTmp[7:0];

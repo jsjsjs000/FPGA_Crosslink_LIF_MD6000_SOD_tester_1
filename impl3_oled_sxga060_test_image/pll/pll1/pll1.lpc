@@ -16,8 +16,8 @@ CoreRevision=5.8
 ModuleName=pll1
 SourceFormat=verilog
 ParameterFileVersion=1.0
-Date=08/31/2024
-Time=18:06:17
+Date=09/02/2024
+Time=11:33:43
 
 [Parameters]
 Verilog=1

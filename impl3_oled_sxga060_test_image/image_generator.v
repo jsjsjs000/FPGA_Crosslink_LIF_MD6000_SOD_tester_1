@@ -16,11 +16,11 @@ module image_generator(
  	reg [11:0] Pcounter = 12'd0;
  	reg Vactive = 1'b0;
 
-	parameter IMAGE_STATE_RECTANGLE  = 4'b0001;		// ImageState - state machine
-	parameter IMAGE_STATE_V_BARS     = 4'b0010;
-	parameter IMAGE_STATE_H_BARS     = 4'b0100;
-	parameter IMAGE_STATE_GRAY_SCALE = 4'b1000;
-	reg [3:0] ImageState = IMAGE_STATE_RECTANGLE;		// state machine
+	//parameter IMAGE_STATE_RECTANGLE  = 4'b0001;		// ImageState - state machine
+	//parameter IMAGE_STATE_V_BARS     = 4'b0010;
+	//parameter IMAGE_STATE_H_BARS     = 4'b0100;
+	//parameter IMAGE_STATE_GRAY_SCALE = 4'b1000;
+	reg [3:0] ImageState = `INITIAL_IMAGE_STATE;		// state machine
 	
 	parameter IMAGE_COUNTER_MAX = 150;					// zmiana obrazu co 150 klatek - 2.5s (60kl/s)
 	reg [7:0] ImageCounter = IMAGE_COUNTER_MAX;
@@ -58,18 +58,20 @@ module image_generator(
 					Vcounter <= 0;				// end of frame
 					VS <= `SYNC_H;
 
+`ifdef CHANGE_IMAGE
 					ImageCounter <= ImageCounter - 1'b1;
 					if (ImageCounter - 1 == 0) begin
 						ImageCounter <= IMAGE_COUNTER_MAX;
 
 						case (ImageState)
-							IMAGE_STATE_RECTANGLE  : ImageState <= IMAGE_STATE_V_BARS;
-							IMAGE_STATE_V_BARS     : ImageState <= IMAGE_STATE_H_BARS;
-							IMAGE_STATE_H_BARS     : ImageState <= IMAGE_STATE_GRAY_SCALE;
-							IMAGE_STATE_GRAY_SCALE : ImageState <= IMAGE_STATE_RECTANGLE;
-							default                : ImageState <= IMAGE_STATE_RECTANGLE;
+							`IMAGE_STATE_RECTANGLE  : ImageState <= `IMAGE_STATE_V_BARS;
+							`IMAGE_STATE_V_BARS     : ImageState <= `IMAGE_STATE_H_BARS;
+							`IMAGE_STATE_H_BARS     : ImageState <= `IMAGE_STATE_GRAY_SCALE;
+							`IMAGE_STATE_GRAY_SCALE : ImageState <= `IMAGE_STATE_RECTANGLE;
+							default                 : ImageState <= `IMAGE_STATE_RECTANGLE;
 						endcase
 					end
+`endif
 				end
 
 				Hcounter <= 12'd0;
