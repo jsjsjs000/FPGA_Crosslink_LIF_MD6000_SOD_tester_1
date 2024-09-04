@@ -13,8 +13,12 @@ for %%p in (impl1_gpio_test impl2_pll impl3_oled_svga060_test_image impl3_oled_s
 
 	rmdir /s /q %%p%\.vdbs
 	rmdir /s /q %%p\LIF_MD6000_SOD_tester_1_%%p.dir
+	rmdir /s /q %%p\synlog
+	rmdir /s /q %%p\syntmp
+	rmdir /s /q %%p\synwork
 	del %%p%\*.alt
 	del %%p%\*.arearep
+	del %%p%\*.areasrr
 	del %%p%\*.asd
 	del %%p%\*.bgn
 	del %%p%\*.bit
@@ -22,10 +26,18 @@ for %%p in (impl1_gpio_test impl2_pll impl3_oled_svga060_test_image impl3_oled_s
 	del %%p%\*.ccl
 	del %%p%\*.drc
 	del %%p%\*.hrr
+	del %%p%\*.htm
 	del %%p%\*.html
 	del %%p%\*.ini
 	del %%p%\*.log
+	del %%p%\*.log.bak.1
+	del %%p%\*.log.bak
+	del %%p%\*.log.bak.2
+	del %%p%\*.log.bak.3
+	del %%p%\*.log.bak.4
+	del %%p%\*.log.bak.5
 	del %%p%\*.lsedata
+	del %%p%\*.ngo
 	del %%p%\*.mrp
 	del %%p%\*.ncd
 	del %%p%\*.ngd
@@ -35,6 +47,13 @@ for %%p in (impl1_gpio_test impl2_pll impl3_oled_svga060_test_image impl3_oled_s
 	del %%p%\*.par
 	del %%p%\*.prf
 	del %%p%\*.pt
+	del %%p%\*.rpt
+	del %%p%\*.srd
+	del %%p%\*.srf
+	del %%p%\*.srm
+	del %%p%\*.srr
+	del %%p%\*.srr.db
+	del %%p%\*.srs
 	del %%p%\*.synproj
 	del %%p%\*.t2b
 	del %%p%\*.twr

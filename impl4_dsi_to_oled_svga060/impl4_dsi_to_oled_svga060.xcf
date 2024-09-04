@@ -7,32 +7,85 @@
 		<Device>
 			<SelectedProg value="TRUE"/>
 			<Pos>1</Pos>
-			<Vendor>Lattice</Vendor>
+			<Vendor>Cypress</Vendor>
 			<Family>LIFMD</Family>
 			<Name>LIF-MD6000</Name>
-			<IDCode>0x012c0043</IDCode>
 			<Package>All</Package>
-			<PON>LIF-MD6000</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/p2119/Desktop/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit</File>
-			<FileTime>02/16/24 15:12:28</FileTime>
-			<JedecChecksum>0x85E5</JedecChecksum>
-			<Operation>Fast Program</Operation>
+			<File>C:/jarsulk-pco/projects/LT-22/Programs/Lattice-Crosslink/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit</File>
+			<FileTime>08/22/24 13:00:05</FileTime>
+			<JedecChecksum>0x563C</JedecChecksum>
+			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
-				<IOState>HighZ</IOState>
-				<PreloadLength>39</PreloadLength>
-				<IOVectorData>0xFFFFFFFFFF</IOVectorData>
-				<TCKFrequency>1.000000 MHz</TCKFrequency>
-				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
-				<AccessMode>SSPI SRAM Programming</AccessMode>
+				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
+			<FPGALoader>
+			<CPLDDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Lattice</Vendor>
+					<Family>LIFMD</Family>
+					<Name>LIF-MD6000</Name>
+					<IDCode>0x012c0043</IDCode>
+					<Package>All</Package>
+					<PON>LIF-MD6000</PON>
+					<Bypass>
+						<InstrLen>8</InstrLen>
+						<InstrVal>11111111</InstrVal>
+						<BScanLen>1</BScanLen>
+						<BScanVal>0</BScanVal>
+					</Bypass>
+					<Operation>Bypass</Operation>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<IOState>HighZ</IOState>
+						<PreloadLength>39</PreloadLength>
+						<IOVectorData>0xFFFFFFFFFF</IOVectorData>
+						<AccessMode>JTAG</AccessMode>
+					</Option>
+				</Device>
+			</CPLDDevice>
+			<FlashDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Cypress</Vendor>
+					<Family>SPI Serial Flash</Family>
+					<Name>S25FS128S</Name>
+					<IDCode>0x18</IDCode>
+					<Package>8-contact WSON</Package>
+					<Operation>SPI Flash Erase,Program,Verify</Operation>
+					<File>C:/jarsulk-pco/projects/LT-22/Programs/Lattice-Crosslink/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit</File>
+					<AddressBase>0x00000000</AddressBase>
+					<EndAddress>0x00020000</EndAddress>
+					<DeviceSize>128</DeviceSize>
+					<DataSize>163523</DataSize>
+					<NumberOfDevices>1</NumberOfDevices>
+					<ReInitialize value="FALSE"/>
+				</Device>
+			</FlashDevice>
+			<FPGADevice>
+				<Device>
+					<Pos>1</Pos>
+					<Name></Name>
+					<File>C:/jarsulk-pco/projects/LT-22/Programs/Lattice-Crosslink/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit</File>
+					<LocalChainList>
+						<LocalDevice index="-99"
+							name="Unknown"
+							file="C:/jarsulk-pco/projects/LT-22/Programs/Lattice-Crosslink/LIF_MD6000_SOD_tester_1/impl4_dsi_to_oled_svga060/LIF_MD6000_SOD_tester_1_impl4_dsi_to_oled_svga060.bit"/>
+					</LocalChainList>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+					</Option>
+				</Device>
+			</FPGADevice>
+			</FPGALoader>
 		</Device>
 	</Chain>
 	<ProjectOptions>
@@ -43,11 +96,11 @@
 		<EndTAP>TLR</EndTAP>
 		<DisableCheckBoard value="TRUE"/>
 		<VerifyUsercode value="FALSE"/>
-		<TCKDelay>10</TCKDelay>
+		<TCKDelay>1</TCKDelay>
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Dual RS232-HS A Location 0000 Serial A</USBID>
+		<USBID>Lattice HW-USBN-2B Ch A Location 0000 Serial VER00001A</USBID>
 	</CableOptions>
 </ispXCF>
